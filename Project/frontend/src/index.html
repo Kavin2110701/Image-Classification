@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Example</title>
+    <style>
+        #videoElement {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Camera Example</h1>
+    <video id="videoElement" autoplay></video>
+
+    <script>
+        // Get access to the webcam
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function(stream) {
+                var video = document.getElementById('videoElement');
+                video.srcObject = stream;
+            })
+            .catch(function(error) {
+                console.log('Error accessing webcam:', error);
+            });
+    </script>
+</body>
+</html>

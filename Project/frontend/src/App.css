@@ -1,0 +1,290 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: auto; /* Always show vertical scrollbar for the entire body */
+}
+
+.layout {
+  min-height: 100vh;
+}
+
+.site-layout-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+  margin-top: 24px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.image-wrapper {
+  flex: 1;
+  padding: 10px;
+}
+
+.image-wrapper img {
+  width: 100%; /* Ensure the image takes the full width of its container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  max-height: 400px; /* Set a maximum height for the images */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.home-content, .about-content, .upload-content {
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+  padding: 50px; /* Add padding to the content for better readability */
+}
+
+.home-content h1, .about-content h1, .upload-content h1 {
+  text-align: center;
+}
+
+.home-content ul, .about-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Customize scrollbar */
+body::-webkit-scrollbar {
+  width: 10px; /* Set width of scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ddd; /* Set color of scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for scrollbar thumb */
+}
+
+/* CSS for loading spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Increase the height of the loading spinner container */
+}
+/* App.css */
+.layout {
+  min-height: 100vh;
+}
+
+.site-layout-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+
+
+.image-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.large-image {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+}
+
+.home-content, .about-content, .upload-content {
+  padding: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-overview {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.ant-layout-content {
+  overflow-y: auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.upload-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* App.css */
+.layout {
+  min-height: 100vh;
+}
+
+.site-layout-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+
+.image-wrapper {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.large-image {
+  width: 100%;
+  height: auto;
+}
+
+.home-content, .about-content, .upload-content {
+  padding: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-overview {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.ant-layout-content {
+  overflow-y: auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.upload-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.spinner-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+/* App.css */
+.layout {
+  min-height: 100vh;
+}
+
+.site-layout-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+.image-container {
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  flex: 1;
+  max-width: 48%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.large-image {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* Set max width for images */
+  object-fit: contain;
+}
+
+.home-content, .about-content, .upload-content {
+  padding: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-overview {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.ant-layout-content {
+  overflow-y: auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.upload-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjusted height to center vertically */
+}
+h3{
+  word-spacing: 2px;
+}
+h1 {
+  font-size: 2.5rem; /* Adjust the size as needed */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333; /* Adjust the color as needed */ /* Optional: transform text to uppercase */
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  animation: hoverEffect 2s infinite;  /* Optional: add letter spacing */
+}
+@keyframes hoverEffect {
+  0%, 100% {
+    color: #333; /* Original color */
+    transform: scale(1); /* Original scale */
+  }
+  50% {
+    color: #007BFF; /* Change the color in the middle of the animation */
+    transform: scale(1); /* Slightly increase the size in the middle of the animation */
+  }
+  80% {
+    color: #007BFF; /* Change the color in the middle of the animation */
+    transform: scale(1); /* Slightly increase the size in the middle of the animation */
+  }
+}
